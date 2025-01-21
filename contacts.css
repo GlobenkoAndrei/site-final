@@ -1,3 +1,4 @@
+@import url("./styles/header.css");
 
 * {
     margin: 0;
@@ -11,58 +12,16 @@ body {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
-
-header {
-    background-color: #ff8c00;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    background: linear-gradient(135deg, #3a3a3a, #000000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    background-color: white;
-    color: #ff8c00;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 
 .contacts_main {
-    flex: 1; /* Заставляем контент занимать всё оставшееся пространство */
+    flex: 1;
+    /* Заставляем контент занимать всё оставшееся пространство */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 90px;
 }
 
@@ -70,7 +29,7 @@ nav ul li a.active {
 
 
 
-.insta{
+.insta {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -82,7 +41,7 @@ nav ul li a.active {
     order: 2;
 }
 
-.tiktok{
+.tiktok {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -94,7 +53,7 @@ nav ul li a.active {
     order: 1;
 }
 
-.phone_block{
+.phone_block {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -106,17 +65,16 @@ nav ul li a.active {
     order: 3;
 }
 
-.nomer_telefona{
+.nomer_telefona {
     text-decoration: underline;
     text-decoration-color: #ff8c00;
 
 }
 
 
-.custom_link{
+.custom_link {
     color: #ff8c00;
 }
-
 
 
 

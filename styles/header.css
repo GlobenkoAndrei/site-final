@@ -1,0 +1,90 @@
+
+header {
+    background-color: #ff8c00;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #3a3a3a, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: white;
+    color: #ff8c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.burger{
+    color: whitesmoke;
+    font-size: 40px;
+    display: none;
+}
+.header-menu{
+    display: none;
+}
+@media (max-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .burger{
+        display: block;
+    }
+    .header-menu.active{
+        display: flex;
+        width: 100%;
+        padding: 40px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ff8c00;
+    }
+    .header-menu-list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: whitesmoke;
+    }
+    .header-menu-list ul li a{
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+}
+
